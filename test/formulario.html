@@ -1,0 +1,371 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+        <!-- JS -->
+
+        <!-- Título da página (aparece na aba) -->
+        <title>Cadastro</title>
+    </head>
+
+    <body>  
+
+        <div class="container">
+
+
+
+            <!--
+    
+                <figure class="logo">
+                     <img src="./images/logo.png" id="logo" alt="logo da prefeitura de Beberibe">
+            
+                 </figure>
+        --> 
+               
+    
+    
+            <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+            <div>
+                <h1 id="titulo">Cadastro do Bugueiro</h1>
+                <p id="subtitulo"></p>
+                <br>
+            </div>
+    
+            <!-- Início do formulário -->
+    
+            <form action="#">
+    
+                    <fieldset>
+                        <legend class="subititulo">Identificação</legend>
+                        <br>
+                        <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                        <div class="campo">
+                         <label for="nome"><strong>Nome:</strong></label>
+                         <input type="text" name="nome" placeholder="Digite o nome completo"id="nome" required>
+                        </div>
+                   
+        
+                        <!-- Campo do sobrenome com legenda "CPF" e css de classe "campo" -->
+                   
+                        <div class="campo">
+                         <label for="cpf"><strong>CPF:</strong></label>
+                         <input id="cpf" type="text" minlength="14" placeholder="000.000.000-00" name="cpf" id="cpf" required>
+                        </div>
+                    
+                        <!-- Campo do sobrenome com legenda "CPF" e css de classe "campo" -->
+                        <div class="campo">
+                          <label for="data"><strong>Data de Nascimento:</strong></label>
+                          <input type="date" name="datanascimento" id="" required>
+                        </div>
+                  
+                     <!-- Campo com legenda "RG" e css de classe "campo" -->
+
+                        <div class="campo">
+                          <label for="rg"><strong>RG:</strong></label>
+                          <input type="number" name="" id="" required>
+                        </div>
+                            
+        
+                    <!-- Campo de email com-->
+                        <div class="campo">
+                          <label for="email"><strong>Email:</strong></label>
+                          <input type="email" name="email" id="email" required>
+                        </div>
+
+                    <div class="campo">
+                        <label for="escolaridade"><strong>Escolaridade:</strong></label>
+                        <select id="escolaridade" required>
+                          <option selected disabled value="">Selecione</option>
+                          <option value="">Analfabeto</option>
+                          <option value="">Até 5° Ano Incompleto</option>
+                          <option value="">5° Completo</option>
+                          <option value="">6° ao 9° Ano do Fundamental</option>
+                          <option value="">Fundamental Completo</option>
+                          <option value="">Médio Incompleto</option>
+                          <option value="">Médio Completo</option>
+                          <option value="">Superior Imcompleto</option>
+                          <option value="">Superior Completo</option>
+                        </select>
+                    </div>
+    
+                  
+                        <label><strong>Sexo:</strong></label><br>
+                        <input type="radio" id="" name="sexo" value="masculino">
+                        <label for="sexo">Masculino</label>
+                        <input type="radio" id="" name="sexo" value="feminino">
+                        <label for="sexo">Feminino</label>
+                        <label> </label>
+                        <br><br>
+                  
+    
+                    <!-- Campo do com legenda "telefone" e css de classe "campo" -->
+    
+                    <div class="campo">
+                    <label for="telefone"><strong>Telefone:</strong></label>
+                    <input type="tel" id="telefone" class="" placeholder="(xx) xxxxx-xxxx" required>
+                    </div>
+                   
+                        <!-- Endereço -->
+                        <div class="campo">
+                          <label for="naturalidade"><strong>Naturalidade:</strong></label>
+                          <input type="text" name="naturalidade" id="" required>
+                        </div>
+    
+
+                        <div class="campo">
+                            <label for=""><strong>Estado Civil:</strong></label>
+                            <select id="" required>
+                              <option selected disabled value="">Selecione</option>
+                              <option value="">Solteiro(a)</option>
+                              <option value="">Casado(a)</option>
+                            </select>
+                        </div>
+                        
+
+                        <div class="campo">
+                            <label><strong>Dependentes:</strong></label>
+                            <input type="radio" id="" name="filhos" value="masculino">
+                            <label for="masculino">Sim</label>
+                            <input type="radio" id="" name="filhos" value="feminino">
+                            <label for="masculino">Não</label>
+                            <input type="number" placeholder=" Quantos filhos">
+                        </div>
+                        <br><br>
+    
+                      
+    
+                        <div class="campo">
+                          <label for="cnh"><strong>CNH:</strong></label>
+                          <input type="number" name="numero" id="numero" required>
+                        </div>
+    
+                        <div class="campo">
+                          <label for="nis"><strong>NIS:</strong></label>
+                          <input type="number" name="numero" id="numero" required>
+                        </div>
+    
+                 </fieldset>
+                 
+                 <fieldset>
+                     <legend>Endereço</legend><br>
+
+                     <div class="campo">
+                       <label for="endereço"><strong>Rua:</strong></label>
+                       <input type="text" name="endereco" id="endereco" required>
+                     </div>
+   
+                     <div class="campo">
+                       <label for="numero"><strong>Numero:</strong></label>
+                       <input type="number" name="numero" id="numero" required>
+                     </div>
+
+                   <!-- CEP -->
+                     <div class="campo">
+                       <label for="cep"><strong>CEP:</strong></label>
+                       <input type="number" name="cep" id="cep" required>
+                     </div>
+   
+                       <div class="campo">
+                           <label for="bairro"><strong>Bairro:</strong></label>
+                           <select id="bairro" required>
+                             <option selected disabled value="">Selecione</option>
+                             <option value="">Barra da Sucatinga</option>
+                             <option value="">Boqueirão do Cesário</option>
+                             <option value="">Centro Sede</option>
+                             <option value="">Centro Parajuru</option>
+                             <option value="">Choró</option>
+                             <option value="">Choro Vaquejador</option>
+                             <option value="">Conjunto Cohab</option>
+                             <option value="">Coqueiro</option>
+                             <option value="">Estrada Grande</option>
+                             <option value="">Forquilha</option>
+                             <option value="">Loteamento Planalto Beberibe</option>
+                             <option value="">Loteamento Planalto Novo Beberibe</option>
+                             <option value="">Marina do Morro Branco</option>
+                             <option value="">Sitio Lucas</option>
+                             <option value="">Sucatinga</option>
+                             <option value="">Tabuba</option>
+                             <option value="">Parajuru</option>
+                             <option value="">Paripueira</option>
+                             <option value="">Praia das Fontes</option>
+                             <option value="">Uruau</option>
+                             <option value="">Serra do Félix</option>
+                             <option value="">Sítio do Leite</option>
+                       </select>
+                       <br>
+
+
+                 </fieldset>
+    
+                 <fieldset>
+    
+    
+                     <legend class="subititulo">Informações sobre Atividade</legend>
+                     <br>
+        
+        
+                     <div class="campo">
+                         <label for=""><strong>Roteiro realizado:</strong></label>
+                         <input type="text" name="roteiros" id="">
+                     </div>
+        
+                     <div class="campo">
+                         <label for="numero"><strong>Quanto tempo trabalha no Ramo:</strong></label>
+                         <input type="number" name="" id="" required>
+                         </div>
+        
+                         <div class="campo">
+                             <label for="numero"><strong>Local onde Comercializa o Serviço:</strong></label>
+                             <input type="text" name="" id="" required>
+                        </div>
+
+                       
+                            <label><strong>Favorável a unificação da classe:</strong></label><br>
+                            <input type="radio" id="" name="unificação" value="">
+                            <label for="masculino">Sim</label>
+                            <input type="radio" id="" name="unificação" value="">
+                            <label for="masculino">Não</label>
+                      
+                         
+                     <!-- Caixa de texto -->
+                     <div class="campo">
+                         <br>
+                         <label for="experiencia"><strong>Sujestão para a melhoria na atividade: </strong></label>
+                         <textarea rows="4" style="width: 18em" cols="50" id="sujestao" name="sujestao"></textarea>
+                     </div>
+                 </fieldset>
+    
+                 <fieldset>
+        
+                     <legend class="subititulo">Informações sobre situação de uso</legend>
+                     <br>
+        
+                     <label><strong>Possui vínculo com alguma organização:</strong></label><br>
+                     <input type="radio" id="" name="vinculo" value="">
+                     <label for="masculino">Sim</label>
+                     <input type="radio" id="" name="vinculo" value="">
+                     <label for="masculino">Não</label>
+                     <br><br>
+        
+                     <div class="campo">
+                         <label for=""><strong>Qual Associação de Buggy:</strong></label>
+                         <select id="" required>
+                           <option selected disabled value="">Selecione</option>
+                           <option value="">ASSOCIAÇÃO DE BUGUEIROS DE MORRO BRANCO</option>
+                           <option value="">ASSOCIAÇÃO DE BUGUEIROS DE BEBERIBE</option>
+                           <option value="">ORIENTAL ADVENTURE</option>
+                           <option value="">COOPBUGGY</option>
+                           <option value="">ISATUR</option>
+                           <option value="">JR TUR</option>
+                           <option value="">BEACH BUGGY</option>
+                           <option value="">PENIEL TUR</option>
+                           <option value="">JJ TUR</option>
+                           <option value="">ESPERANÇA TUR</option>
+                           <option value="">ESTRELA TUR</option>
+                           <option value="">VITÓRIA TUR</option>
+                           <option value="">ASSOCIAÇÃO DE BUGUES PRAIA DAS FONTES</option>
+                           <option value="">BUGUE ADVENTURY</option>
+                           <option value="">ASSOCIAÇÃO DOS BUGUEIROS DE URUAÚ</option>
+                         </select>
+                     </div>
+        
+                     <br>
+        
+                     <label><strong>Condutor do veículo titular da permissão:</strong></label><br>
+                     <input type="radio" id="" name="permissao" value="">
+                     <label for="masculino">Sim</label>
+                     <input type="radio" id="" name="permissao" value="">
+                     <label for="masculino">Não</label>
+                     <br><br>
+                     
+                      <div class="campo">
+                        <label for="numero"><strong>Número do cadastro do motorista:</strong></label>
+                        <input type="number" name="" id="" required>
+                      </div>
+        
+                         <label><strong>ALuguel ou Arrendamento:</strong></label><br>
+                         <input type="radio" id="" name="permissao" value="">
+                         <label for="masculino">Sim</label>
+                         <input type="radio" id="" name="permissao" value="">
+                         <label for="masculino">Não</label>
+                         <label> </label>
+                         <br><br>
+        
+                            <div class="campo">
+                             <label for="sobrenome"><strong>Tempo de vigência do contrato:</strong></label>
+                             <input type="number" name="" id="">
+                            </div>
+
+                            <div class="campo">      
+                             <label for="sobrenome"><strong>Nome do arrendatário:</strong></label>
+                             <input type="text" name="" id="">
+                            </div>
+        
+                            <div class="campo">
+                             <label for="cnh2"><strong>CNH:</strong></label>
+                             <input type="number" name="" id="">
+                            </div>
+                 </fieldset>
+    
+                 <fieldset>
+                    <legend class="subititulo">Identificação do Veículo</legend><br>
+        
+                        <div class="campo">
+                          <label for="placa"><strong>Placa:</strong></label>
+                          <input type="text" name="placa" onkeyup="validarPlaca(this)" placeholder=" ex: ABC-1234" maxlength="8" autofocus>
+                        </div>
+                        <!-- Ali o atributo "maxlength" evita que o usuário digite mais do que 8 caracteres -->
+        
+                        <div class="campo">
+                          <label for="sobrenome"><strong>Ano:</strong></label>
+                          <input type="datetime" name="" id="" placeholder="">
+                        </div>
+        
+                        <div class="campo">
+                          <label for="cor"><strong>COR:</strong></label>
+                          <input type="text" name="" id="" placeholder="">
+                        </div>
+        
+        
+                        <div class="campo">
+                            <label for="registro"><strong>REGISTRO/ALVARÁ N°:</strong></label>
+                            <input type="number" name="" id="" placeholder="">
+                        </div>
+        
+                        <div class="campo">
+                            <label for="renavam"><strong>RENAVAM:</strong></label>
+                            <input type="number" name="" id="" placeholder="">
+                        </div>
+        
+                        <div class="campo">
+                           <label for="chassi"><strong>CHASSI:</strong></label>
+                           <input type="number" name="" id="" placeholder=""> 
+                        </div>
+                            
+                        <br><br>
+                 </fieldset>
+        
+                    <!-- Botão para enviar o formulário -->
+                    <br>
+                   <button class="botao" type="submit" onsubmit="">Cadastrar</button>          
+                </form>
+        </div>
+
+        <script src="form.js"></script>
+
+
+
+    </body>
+
+</html>
+
+
+
+
