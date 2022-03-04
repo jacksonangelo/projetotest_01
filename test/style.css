@@ -29,7 +29,7 @@ nav {
 }
 
 main {
-  background: url("praia-das-fontes.jpg") no-repeat center center;
+  background: url("./assets/praia-das-fontes.jpg") no-repeat center center;
   background-size: cover;
   height: 92vh;
   
@@ -116,7 +116,7 @@ main {
   border-radius: 4px;
   background-color: #380B61;
   border: none;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
   font-size: 28px;
   padding: 5px;

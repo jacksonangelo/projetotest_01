@@ -55,8 +55,8 @@
                         <!-- Campo do sobrenome com legenda "CPF" e css de classe "campo" -->
                    
                         <div class="campo">
-                         <label for="cpf"><strong>CPF:</strong></label>
-                         <input id="cpf" type="text" minlength="14" placeholder="000.000.000-00" name="cpf" id="cpf" required>
+                          <label for="cpf"><strong>CPF:</strong></label>
+                          <input id="cpf" type="text" autocomplete="off" maxlength="14" placeholder="000.000.000-00" name="cpf" required>
                         </div>
                     
                         <!-- Campo do sobrenome com legenda "CPF" e css de classe "campo" -->
@@ -169,7 +169,7 @@
                    <!-- CEP -->
                      <div class="campo">
                        <label for="cep"><strong>CEP:</strong></label>
-                       <input type="number" name="cep" id="cep" required>
+                       <input id="cep" type="text" name="cep" maxlength="9" required>
                      </div>
    
                        <div class="campo">
@@ -290,7 +290,7 @@
                         <input type="number" name="" id="" required>
                       </div>
         
-                         <label><strong>ALuguel ou Arrendamento:</strong></label><br>
+                         <label><strong>ALuguel/Arrendamento:</strong></label><br>
                          <input type="radio" id="" name="permissao" value="">
                          <label for="masculino">Sim</label>
                          <input type="radio" id="" name="permissao" value="">
